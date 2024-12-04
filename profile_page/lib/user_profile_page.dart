@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:profile_page/utils/about.dart';
+import 'package:profile_page/utils/work.dart';
 
 class UserProfilePage extends StatefulWidget {
   const UserProfilePage({super.key});
@@ -45,7 +46,7 @@ class _UserProfilePageState extends State<UserProfilePage> {
                           image: const DecorationImage(
                               image: NetworkImage(
                                   'https://i.pinimg.com/736x/b5/78/5a/b5785af39d097409d685d68c242c146a.jpg'),
-                              fit: BoxFit.contain)),
+                              fit: BoxFit.cover)),
                     ),
                   ),
                   // Profile Info
@@ -148,12 +149,7 @@ class _UserProfilePageState extends State<UserProfilePage> {
       case 0:
         return const About();
       case 1:
-        return const Center(
-          child: Text(
-            'This is the Work section.',
-            style: TextStyle(fontSize: 18),
-          ),
-        );
+        return const Work();
       case 2:
         return const Center(
           child: Text(
