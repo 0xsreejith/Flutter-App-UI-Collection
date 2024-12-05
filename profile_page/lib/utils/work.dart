@@ -18,7 +18,7 @@ class Work extends StatelessWidget {
                 color: Colors.white,
                 borderRadius: BorderRadius.circular(12)
               ),
-              child: Column(
+              child: const Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
@@ -43,7 +43,7 @@ class Work extends StatelessWidget {
                 color: Colors.white,
                 borderRadius: BorderRadius.circular(12)
               ),
-              child: Column(
+              child: const Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
