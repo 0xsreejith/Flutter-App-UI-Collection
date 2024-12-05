@@ -29,7 +29,7 @@ class _MainPageState extends State<MainPage> with SingleTickerProviderStateMixin
       body: Stack(
         children: [
           Container(
-            decoration: BoxDecoration(
+            decoration: const BoxDecoration(
               image: DecorationImage(
                 image: NetworkImage(
                     'https://i.pinimg.com/736x/de/43/8b/de438bb625af669620dd2c827137fe84.jpg'),
@@ -58,10 +58,10 @@ class _MainPageState extends State<MainPage> with SingleTickerProviderStateMixin
                         controller: tabController,
                         indicatorSize: TabBarIndicatorSize.tab,
                         indicator: BoxDecoration(
-                          gradient: LinearGradient(colors: [Colors.red, Colors.orange]),
+                          gradient: const LinearGradient(colors: [Colors.red, Colors.orange]),
                           borderRadius: BorderRadius.circular(8),
                         ),
-                        tabs: [
+                        tabs: const [
                           Tab(child: Text('Login')),
                           Tab(child: Text('Register')),
                         ],
@@ -90,15 +90,15 @@ class _MainPageState extends State<MainPage> with SingleTickerProviderStateMixin
 
   Widget _buildLoginTab() {
     return Padding(
-      padding: EdgeInsets.all(20),
+      padding: const EdgeInsets.all(20),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Text(
+          const Text(
             "Login with Social Media",
             style: TextStyle(color: Colors.white, fontSize: 16),
           ),
-          SizedBox(height: 20),
+          const SizedBox(height: 20),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
@@ -114,19 +114,19 @@ class _MainPageState extends State<MainPage> with SingleTickerProviderStateMixin
 
   Widget _buildRegisterTab() {
     return Padding(
-      padding: EdgeInsets.all(20),
+      padding: const EdgeInsets.all(20),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Text(
+          const Text(
             "Register Here",
             style: TextStyle(color: Colors.white, fontSize: 16),
           ),
-          SizedBox(height: 20),
+          const SizedBox(height: 20),
           TextField(
             decoration: InputDecoration(
               hintText: 'Enter your email',
-              hintStyle: TextStyle(color: Colors.white54),
+              hintStyle: const TextStyle(color: Colors.white54),
               filled: true,
               fillColor: Colors.white.withOpacity(0.2),
               border: OutlineInputBorder(
@@ -135,12 +135,12 @@ class _MainPageState extends State<MainPage> with SingleTickerProviderStateMixin
               ),
             ),
           ),
-          SizedBox(height: 20),
+          const SizedBox(height: 20),
           TextField(
             obscureText: true,
             decoration: InputDecoration(
               hintText: 'Enter your password',
-              hintStyle: TextStyle(color: Colors.white54),
+              hintStyle: const TextStyle(color: Colors.white54),
               filled: true,
               fillColor: Colors.white.withOpacity(0.2),
               border: OutlineInputBorder(
@@ -149,18 +149,18 @@ class _MainPageState extends State<MainPage> with SingleTickerProviderStateMixin
               ),
             ),
           ),
-          SizedBox(height: 20),
+          const SizedBox(height: 20),
           ElevatedButton(
             onPressed: () {
               // Handle registration
             },
-            child: Text("Register"),
             style: ElevatedButton.styleFrom(
               backgroundColor: Colors.orange,
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(8),
               ),
             ),
+            child: Text("Register"),
           ),
         ],
       ),
@@ -169,7 +169,7 @@ class _MainPageState extends State<MainPage> with SingleTickerProviderStateMixin
 
   Widget _buildSocialMediaIcon(IconData icon) {
     return Container(
-      padding: EdgeInsets.all(8),
+      padding: const EdgeInsets.all(8),
       decoration: BoxDecoration(
         shape: BoxShape.circle,
         color: Colors.white.withOpacity(0.2),
