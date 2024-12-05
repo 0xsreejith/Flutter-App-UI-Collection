@@ -1,16 +1,25 @@
-# login_ui
+# Flutter Glassmorphic Login and Register Page
 
-A new Flutter project.
+This Flutter project demonstrates a beautifully designed **glassmorphic login and register interface** using features like `BackdropFilter`, `TabController`, and `TabBarView`. It includes separate tabs for login and registration, each with interactive UI elements.
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+## Features
+- **Glassmorphic design**: Achieved using a `BackdropFilter` and opacity layers for a frosted glass effect.
+- **Login and Register Tabs**: Seamlessly switch between login and registration forms with a `TabBar`.
+- **Responsive social media login**: Support for icons like Facebook, Apple, and Email.
+- **Stylish text fields**: Custom-styled text fields with rounded corners and semi-transparent backgrounds.
+- **Dynamic background**: A vibrant background image with a blur effect.
 
-A few resources to get you started if this is your first Flutter project:
+---
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Screenshots
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### Login Page
+![Login Page](output/screen1.png)
+
+### Register Page
+![Register Page](output/screen2.png)
+
+---
+
