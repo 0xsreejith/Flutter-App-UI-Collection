@@ -92,6 +92,20 @@ class FeedBack extends StatelessWidget {
             child: Padding(
               padding: const EdgeInsets.symmetric(horizontal: 20.0),
               child: Container(
+                width: 100,
+                height: 140,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(12),
+                  color: Colors.white,
+                  boxShadow: [
+                    BoxShadow(
+                      color: Colors.grey.withOpacity(0.5), // Shadow color
+                      offset: const Offset(0, -5), // Negative Y offset for top shadow
+                      blurRadius: 10, // Blur radius
+                      spreadRadius: 2, // Spread radius
+                    ),
+                  ],
+                ),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
@@ -125,20 +139,6 @@ class FeedBack extends StatelessWidget {
                     )
                   ],
                 ),
-                width: 100,
-                height: 140,
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(12),
-                  color: Colors.white,
-                  boxShadow: [
-                    BoxShadow(
-                      color: Colors.grey.withOpacity(0.5), // Shadow color
-                      offset: Offset(0, -5), // Negative Y offset for top shadow
-                      blurRadius: 10, // Blur radius
-                      spreadRadius: 2, // Spread radius
-                    ),
-                  ],
-                ),
               ),
             ),
           )
@@ -163,10 +163,10 @@ class MyStatus extends StatelessWidget {
       padding: const EdgeInsets.symmetric(horizontal: 10.0),
       child: GestureDetector(
         onTap: (){  
-          Get.to(HappinessScore());
+          Get.to(const HappinessScore());
         },
         child: Container(
-          padding: EdgeInsets.all(10),
+          padding: const EdgeInsets.all(10),
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(12),
             border: Border.all(color: Colors.grey.shade500)),

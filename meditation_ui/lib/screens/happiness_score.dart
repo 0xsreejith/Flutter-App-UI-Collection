@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class HappinessScore extends StatelessWidget {
-  const HappinessScore({Key? key}) : super(key: key);
+  const HappinessScore({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -9,7 +9,7 @@ class HappinessScore extends StatelessWidget {
       backgroundColor: Colors.grey[300],
       body: Stack(
         children: [
-          Positioned(
+          const Positioned(
               top: -360,
               left: -350,
               right: -350,
@@ -24,12 +24,12 @@ class HappinessScore extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
-                  Text(
+                  const Text(
                     'Your Happiness Score',
                     style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
                   ),
                   const SizedBox(height: 10),
-                  Text(
+                  const Text(
                     '2132',
                     style: TextStyle(fontWeight: FontWeight.bold, fontSize: 40),
                   ),
@@ -37,14 +37,14 @@ class HappinessScore extends StatelessWidget {
                     padding: const EdgeInsets.symmetric(horizontal: 50.0),
                     child: RichText(
                       textAlign: TextAlign.center,
-                      text: TextSpan(
+                      text: const TextSpan(
                           text:
                               'Congratulations! Your happiness score  is very high',
                           style: TextStyle(fontSize: 15, color: Colors.black)),
                     ),
                   ),
                   const SizedBox(height: 30),
-                  Row(
+                  const Row(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
                       MyContainer(
@@ -67,8 +67,8 @@ class HappinessScore extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 16.0),
+                  const Padding(
+                    padding: EdgeInsets.symmetric(horizontal: 16.0),
                     child: Text(
                       'Recommanded for you',
                       style: TextStyle(
@@ -83,11 +83,11 @@ class HappinessScore extends StatelessWidget {
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(12),
                         color: Colors.white,),
-                      padding: EdgeInsets.all(10),
+                      padding: const EdgeInsets.all(10),
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
-                          Column(
+                          const Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Text('Basic Meditation',style: TextStyle(fontWeight: FontWeight.bold),),
@@ -140,7 +140,7 @@ class MyContainer extends StatelessWidget {
                   children: [
                     Text(
                       label,
-                      style: TextStyle(fontWeight: FontWeight.bold),
+                      style: const TextStyle(fontWeight: FontWeight.bold),
                     ),
                     Text(subLabel),
                   ],
