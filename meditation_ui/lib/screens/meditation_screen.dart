@@ -103,13 +103,12 @@ class MeditationScreen extends StatelessWidget {
                               fontSize: 25,
                               color: Color(0xff583823),
                               fontWeight: FontWeight.bold)),
-                                    TextSpan(
+                      TextSpan(
                           text: ' AI',
                           style: TextStyle(
                               fontSize: 25,
                               color: Colors.black54,
                               fontWeight: FontWeight.bold)),
-
                     ]),
               )),
           Positioned(
@@ -117,8 +116,8 @@ class MeditationScreen extends StatelessWidget {
               left: 0,
               right: 0,
               child: GestureDetector(
-                onTap: (){
-                  Get.off(MainScreen());
+                onTap: () {
+                  Get.off(FeedBack());
                 },
                 child: Container(
                   padding: const EdgeInsets.all(15),
