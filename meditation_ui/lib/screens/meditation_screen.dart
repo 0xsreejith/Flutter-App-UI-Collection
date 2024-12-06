@@ -1,6 +1,8 @@
 // ignore_for_file: prefer_const_literals_to_create_immutables, prefer_const_constructors
 
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:meditation_ui/screens/main_screen.dart';
 
 class MeditationScreen extends StatelessWidget {
   const MeditationScreen({super.key});
@@ -114,14 +116,19 @@ class MeditationScreen extends StatelessWidget {
               top: 550,
               left: 0,
               right: 0,
-              child: Container(
-                padding: const EdgeInsets.all(15),
-                decoration: const BoxDecoration(
-                    color: Color.fromARGB(255, 99, 7, 7),
-                    shape: BoxShape.circle),
-                child: const Icon(
-                  Icons.arrow_forward,
-                  color: Colors.white,
+              child: GestureDetector(
+                onTap: (){
+                  Get.off(MainScreen());
+                },
+                child: Container(
+                  padding: const EdgeInsets.all(15),
+                  decoration: const BoxDecoration(
+                      color: Color.fromARGB(255, 99, 7, 7),
+                      shape: BoxShape.circle),
+                  child: const Icon(
+                    Icons.arrow_forward,
+                    color: Colors.white,
+                  ),
                 ),
               ))
         ],
