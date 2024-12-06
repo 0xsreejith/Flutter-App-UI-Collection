@@ -16,10 +16,10 @@ This Flutter project demonstrates a beautifully designed **glassmorphic login an
 ## Screenshots
 
 ### Login Page
-![Login Page](output/screen1.png)
+![Login Page](output/screen2.png)
 
 ### Register Page
-![Register Page](output/screen2.png)
+![Register Page](output/screen1.png)
 
 ---
 
