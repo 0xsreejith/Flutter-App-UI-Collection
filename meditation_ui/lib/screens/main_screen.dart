@@ -106,11 +106,11 @@ class FeedBack extends StatelessWidget {
                     ),
                   ],
                 ),
-                child: Column(
+                child: const Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Padding(
-                      padding: const EdgeInsets.all(8.0),
+                      padding: EdgeInsets.all(8.0),
                       child: SizedBox(
                           child: Text(
                         "Are you happy with this session?",

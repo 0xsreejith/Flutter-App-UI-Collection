@@ -144,7 +144,7 @@ class _PlayerProfileState extends State<PlayerProfile>
                       borderRadius: BorderRadius.circular(12),
                     ),
                   ),
-                  child:  Row(
+                  child:  const Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Text(

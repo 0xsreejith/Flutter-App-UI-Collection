@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
         textTheme: GoogleFonts.sonoTextTheme(),
       ),
       debugShowCheckedModeBanner: false,
-      home: PlayerProfile(),
+      home: const PlayerProfile(),
       
 
     );

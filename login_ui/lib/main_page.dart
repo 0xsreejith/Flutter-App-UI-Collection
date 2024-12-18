@@ -160,7 +160,7 @@ class _MainPageState extends State<MainPage> with SingleTickerProviderStateMixin
                 borderRadius: BorderRadius.circular(8),
               ),
             ),
-            child: Text("Register"),
+            child: const Text("Register"),
           ),
         ],
       ),
